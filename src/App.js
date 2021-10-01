@@ -1,13 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
 
-import LoginControl from './LoginControl';
+import Blog from './Blog';
 import React from 'react';
+
+// Blog Component
+const posts = [
+  {
+      id: 1,
+      title: 'Hello World',
+      content: 'Welcome to learning React!'
+  },
+  {
+      id: 2,
+      title: 'Installation',
+      content: 'You can install React from npm.'
+  }
+];
 
 function App() {
   return (
     <React.Fragment>
-      <LoginControl />
+      <Blog posts={posts} />
     </React.Fragment>
   );
 }
