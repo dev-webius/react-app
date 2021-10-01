@@ -1,11 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
 
-import Toggle from './Toggle';
+import LoginControl from './LoginControl';
+import React from 'react';
 
 function App() {
   return (
-    <Toggle />
+    <React.Fragment>
+      <LoginControl />
+    </React.Fragment>
   );
 }
 
