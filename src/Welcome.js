@@ -56,7 +56,7 @@ class Welcome extends React.Component {
                 text={comment.text}
                 author={comment.author} />
         )
-    };
+    }
 }
 
 export default Welcome;

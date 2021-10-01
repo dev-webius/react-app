@@ -1,3 +1,7 @@
+import React from 'react';
+
+import Mailbox from './Mailbox';
+
 function Greeting(props) {
     if (props.isLoggedIn) {
         return <UserGreeting name={props.name} />
@@ -6,7 +10,14 @@ function Greeting(props) {
 }
 
 function UserGreeting(props) {
-    return <h1>Welcome, {props.name}!</h1>;
+    const messages = ['React', 'Re: React', 'Re: Re: React'];
+    
+    return (
+        <React.Fragment>
+            <h1>Welcome, {props.name}!</h1>
+            <Mailbox unreadMessage={messages} />
+        </React.Fragment>
+    );
 }
 
 function GuestGreeting(props) {

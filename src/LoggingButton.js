@@ -10,7 +10,7 @@ class LoggingButton extends React.Component {
     clickHandler(e, i, s) {
         console.log('this is:', this);
         console.log(e, i, s);
-    };
+    }
 
     render() {
         return (

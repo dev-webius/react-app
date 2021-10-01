@@ -35,17 +35,17 @@ class LoginControl extends React.Component {
     }
 
     render() {
-        const button = this.state.isLoggedIn
-            ? <LogoutButton onClick={this.logoutHandler} />
-            : <LoginButton onClick={this.loginHandler} />;
-
         return (
             <React.Fragment>
                 <Greeting isLoggedIn={this.state.isLoggedIn} name="webius" />
-                {button}
+                {
+                    this.state.isLoggedIn
+                        ? <LogoutButton onClick={this.logoutHandler} />
+                        : <LoginButton onClick={this.loginHandler} />
+                }
             </React.Fragment>
         );
-    };
+    }
 }
 
 export default LoginControl;
