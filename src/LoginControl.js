@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Greeting from './Greeting';
+import Page from './Page';
 
 function LoginButton(props) {
     return <button onClick={props.onClick}>Login</button>;
@@ -43,6 +44,7 @@ class LoginControl extends React.Component {
                         ? <LogoutButton onClick={this.logoutHandler} />
                         : <LoginButton onClick={this.loginHandler} />
                 }
+                <Page />
             </React.Fragment>
         );
     }
