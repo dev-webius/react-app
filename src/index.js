@@ -1,15 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import Clock from './Clock';
 import Welcome from './Welcome';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Welcome name="Webius" />
-    <Welcome name="Yeseung Kim" />
-    <Welcome name="World" />
-    <Welcome name="Test User" />
+    <Welcome />
+    <Clock />
   </React.StrictMode>,
   document.getElementById('root')
 )
