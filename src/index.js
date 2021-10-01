@@ -1,14 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Clock from './Clock';
-import Welcome from './Welcome';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Welcome />
-    <Clock />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 )

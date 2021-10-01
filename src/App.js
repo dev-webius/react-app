@@ -1,6 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
 
+import Toggle from './Toggle';
+
+function App() {
+  return (
+    <Toggle />
+  );
+}
+
+/*
 function App() {
   return (
     <div className="App">
@@ -21,5 +30,6 @@ function App() {
     </div>
   );
 }
+*/
 
 export default App;
