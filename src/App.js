@@ -1,8 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 
-import Blog from './Blog';
 import React from 'react';
+
+import Calculator from './Calculator';
 
 // Blog Component
 const posts = [
@@ -21,10 +22,26 @@ const posts = [
 function App() {
   return (
     <React.Fragment>
-      <Blog posts={posts} />
+      <Calculator />
     </React.Fragment>
   );
 }
+
+/*
+// 첫 번째 입력은 잠겨있지만 잠시 후 입력이 가능해짐
+ReactDOM.render(
+  <input value="hi" />,
+  document.getElementById('test')
+);
+
+// null or void 0 (undefined)
+setTimeout(() => {
+  ReactDOM.render(
+    <input value={null} />,
+    document.getElementById('test')
+  );
+}, 1000);
+*/
 
 /*
 function App() {
