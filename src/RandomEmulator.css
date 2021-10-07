@@ -1,0 +1,6 @@
+.input-form { position: absolute; }
+
+.output { display: flex; height: 100%; justify-content: center; align-items: center; flex-direction: column; }
+.output table { table-layout: fixed; border-spacing: 0; border-collapse: collapse; }
+.output table th, .output table td { border: 1px solid #ddd; padding: 0.5rem 1rem; }
+.output button { padding: 0.5rem 2rem; margin: 1rem 0; }

@@ -3,7 +3,7 @@ import './App.css';
 
 import React from 'react';
 
-import Calculator from './Calculator';
+import Emulator from './Emulator';
 
 // Blog Component
 const posts = [
@@ -22,7 +22,7 @@ const posts = [
 function App() {
   return (
     <React.Fragment>
-      <Calculator />
+      <Emulator />
     </React.Fragment>
   );
 }
